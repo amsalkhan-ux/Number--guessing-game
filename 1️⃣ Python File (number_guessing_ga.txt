@@ -1,0 +1,61 @@
+1️⃣ Python File (number_guessing_game.py)
+
+import random
+
+def number_guessing_game():
+    print("Number Guessing Game")
+    print("Project by: Amsal Fatima (BSCS, 2nd Semester)")
+    print("Submitted to: Adnan Sir\n")
+
+    secret_number = random.randint(1, 50)
+    attempts = 0
+
+    while True:
+        try:
+            guess = int(input("Enter your guess (1-50): "))
+            attempts += 1
+
+            if guess < secret_number:
+                print("Too low, try again.")
+            elif guess > secret_number:
+                print("Too high, try again.")
+            else:
+                print(f"Correct! The number was {secret_number}.")
+                print(f"You guessed it in {attempts} attempts.")
+                break
+        except ValueError:
+            print("Please enter a valid number between 1 and 50.")
+
+if name == "main":
+    number_guessing_game()
+
+
+
+2️⃣ README File (README.md)
+
+# Number Guessing Game (Python Project)
+
+## Project Information
+- Student Name: Amsal Fatima  
+- Program: BSCS (2nd Semester)  
+- Submitted to: Adnan Sir  
+
+
+## Introduction
+This is a simple Python project.  
+The computer chooses a random number between 1 and 50.  
+The user guesses the number.  
+The program gives hints if the guess is too high or too low.  
+It also shows the number of attempts when the correct answer is found.  
+
+## Concepts Used
+- Random number generation  
+- Loops  
+- If-else conditions  
+- Variables  
+
+
+## How to Run
+1. Install Python on your computer.  
+2. Save the file number_guessing_game.py.  
+3. Run it using the command:
